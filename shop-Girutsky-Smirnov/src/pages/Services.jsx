@@ -1,11 +1,11 @@
 import React from 'react';
 
-const Button = () => {
+const Services = () => {
     return (
         <div>
-            
+            СЕРВИСЫ
         </div>
     );
 };
 
-export default Button;
+export default Services;

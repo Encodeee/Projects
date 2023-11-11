@@ -1,0 +1,6 @@
+export const HOME_ROUTE = '/'
+export const ABOUT_ROUTE = '/about'
+export const CONTACTS_ROUTE = '/contacts'
+export const SERVICES_ROUTE = '/services'
+export const VACANCIES_ROUTE = '/vacancies'
+export const TASKS_ROUTE = '/tasks'
