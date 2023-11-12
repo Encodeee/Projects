@@ -8,9 +8,7 @@ const StyledHeader = styled.div`
     justify-content: flex-start;
     align-items: center;
     & > :first-child {
-    margin-right: 500px;
-    margin-left: 50px;
-    margin-top: 10px;
+    margin: 30px 350px 30px 50px;
   }
 `
 
