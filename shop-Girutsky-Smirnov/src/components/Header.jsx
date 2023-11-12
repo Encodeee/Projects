@@ -5,6 +5,13 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.div`
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    & > :first-child {
+    margin-right: 500px;
+    margin-left: 50px;
+    margin-top: 10px;
+  }
 `
 
 const Header = () => {
