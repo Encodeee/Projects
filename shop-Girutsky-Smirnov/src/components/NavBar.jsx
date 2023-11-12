@@ -9,38 +9,56 @@ justify-content: center;
 align-items: center;
 flex-direction: row;
 gap: 15px;
+margin-top: 20px;
 `
+
+const StyledFirstNavLink = styled(NavLink)`
+text-decoration: none;
+color: #000; 
+
+&:before {
+    content: '[';
+    color: #ff0000; 
+    margin-right: 4px; 
+}
+
+&:after {
+    content: ']';
+    color: #ff0000; 
+    margin-left: 4px; 
+}   
+`
+const StyledNavLink = styled(NavLink)`
+text-decoration: none;
+color: #000;
+`
+
 
 
 
 const NavBar = () => {
     return (
         <StyledNavBar>
-            <div>
-                <NavLink to={SERVICES_ROUTE}>
+                <StyledFirstNavLink to={SERVICES_ROUTE}>
                     Услуги
-                </NavLink>
-            </div>
-            <button>
-                <NavLink to={TASKS_ROUTE}>
+                </StyledFirstNavLink>
+            
+                <StyledNavLink to={TASKS_ROUTE}>
                     Выполненные проекты
-                </NavLink>
-            </button>
-            <button>
-                <NavLink to={ABOUT_ROUTE}>
+                </StyledNavLink>
+            
+                <StyledNavLink to={ABOUT_ROUTE}>
                     О Компании
-                </NavLink>
-            </button>
-            <button>
-                <NavLink to={VACANCIES_ROUTE}>
+                </StyledNavLink>
+            
+                <StyledNavLink to={VACANCIES_ROUTE}>
                     Вакансии
-                </NavLink>
-            </button>
-            <button>
-                <NavLink to={CONTACTS_ROUTE}>
+                </StyledNavLink>
+
+                <StyledNavLink to={CONTACTS_ROUTE}>
                     Контакты
-                </NavLink>
-            </button>
+                </StyledNavLink>
+            
         </StyledNavBar>
     );
 };
